@@ -1,139 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./asset/css/style.css" />
-    <title>Abrham T. Blog</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./gallery.html">Gallery</a></li>
-        </ul>
-      </nav>
-    </header>
-    <style>
-      .profile {
-        float: left;
-        width: 250px;
-        height: 250px;
-        /* border-radius: 10px; */
-      }
-      .story {
-        border-bottom: solid 2px black;
-      }
-      p {
-        font-size: 1.2rem;
-        font-family: Arial, Helvetica, sans-serif;
-        font-style: oblique;
-      }
-      .description {
-        float: inline-start;
-      }
-      .name {
-        margin-top: 100px;
-      }
-      .clear {
-        clear: both;
-      }
-      .photos img {
-        float: left;
-        /* margin-right: 10px; */
-        width: 30%;
-        height: 300px;
 
-        margin: 1%;
-      }
-      .gallery {
-        margin-top: 150px;
-      }
-    </style>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./asset/css/style.css" />
+  <title>Abrham T. Blog</title>
+</head>
 
-    <h1 class="name">Abrham Tesfaye</h1>
-    <div id="Story">
-      <img class="profile" src="./asset/image/ai.png" alt="profile" />
-      <p class="description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quis libero
-        incidunt! Autem animi veniam delectus consequuntur provident aperiam
-        ratione sequi qui dicta? Sunt modi, repudiandae esse beatae possimus
-        quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quis
-        libero incidunt! Autem animi veniam delectus consequuntur provident
-        aperiam ratione sequi qui dicta? Sunt modi, repudiandae esse beatae
-        possimus quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Ex quis libero incidunt! Autem animi veniam delectus consequuntur
-        provident aperiam ratione sequi qui dicta? Sunt modi, repudiandae esse
-        beatae possimus quasi.
-      </p>
-      <p class="clear">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quis libero
-        incidunt! Autem animi veniam delectus consequuntur provident aperiam
-        ratione sequi qui dicta? Sunt modi, repudiandae esse beatae possimus
-        quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quis
-        libero incidunt! Autem animi veniam delectus consequuntur provident
-        aperiam ratione sequi qui dicta? Sunt modi, repudiandae esse beatae
-        possimus quasi.
-      </p>
-    </div>
+<body>
+  <header>
+    <nav id="navigationBar">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+  <style>
+    header{
+      margin: 0px;
+    }
+    .profile {
+      float: left;
+      width: 250px;
+      height: 250px;
+      /* border-radius: 10px; */
+    }
+    
+
+    .story {
+      border-bottom: solid 2px black;
+    }
+
+    p {
+      font-size: 1.2rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: oblique;
+    }
+
+    .description {
+      float: inline-start;
+    }
+
+    .name {
+      margin-top: 100px;
+      text-transform: uppercase;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    .photos img {
+      float: left;
+      /* margin-right: 10px; */
+      width: 90%;
+      height: 300px;
+      margin: 3%;
+    }
+
+    .gallery {
+      margin-top: 150px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      
+
+    }
+    .photos{
+      flex: 1 30%;
+      justify-content: space-around;
+    }
+    @media(max-width: 750px){
+      .photos{
+        flex: 1 50%;
+        justify-content: space-around;
+      }
+      .p{
+        font-size: 1rem;
+      }
+
+    }
+    @media(max-width: 500px){
+      .photos{
+        flex: 1 100%;
+        justify-content: space-around;
+      }
+      .p{
+        font-size: 0.8rem;
+      }
+    }
+  
+  </style>
+
+  <h1 class="name">Abrham Tesfaye</h1>
+  <div id="Story">
+    <img class="profile" src="./asset/image/ai.png" alt="profile" />
+    <p class="description">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quis libero
+      incidunt! Autem animi veniam delectus consequuntur provident aperiam
+      ratione sequi qui dicta? Sunt modi, repudiandae esse beatae possimus
+      quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quis
+      libero incidunt! Autem animi veniam delectus consequuntur provident
+      aperiam ratione sequi qui dicta? Sunt modi, repudiandae esse beatae
+      possimus quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Ex quis libero incidunt! Autem animi veniam delectus consequuntur
+      provident aperiam ratione sequi qui dicta? Sunt modi, repudiandae esse
+      beatae possimus quasi.
+    </p>
+    <p class="clear">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quis libero
+      incidunt! Autem animi veniam delectus consequuntur provident aperiam
+      ratione sequi qui dicta? Sunt modi, repudiandae esse beatae possimus
+      quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quis
+      libero incidunt! Autem animi veniam delectus consequuntur provident
+      aperiam ratione sequi qui dicta? Sunt modi, repudiandae esse beatae
+      possimus quasi.
+    </p>
+  </div>
+  <div>
     <div class="gallery">
       <div class="photos">
-        <img
-          src="./asset/image/after hours.jpg"
-          alt=""
-        />
+        <img src="./asset/image/after hours.jpg" alt="" />
       </div>
       <div class="photos">
-        <img
-          src="./asset/image/dear melancholy.jpg"
-          alt=""
-        />
+        <img src="./asset/image/dear melancholy.jpg" alt="" />
       </div>
       <div class="photos">
-        <img
-          src="./asset/image/dertogada.jpg"
-          alt=""
-        />
+        <img src="./asset/image/dertogada.jpg" alt="" />
       </div>
       <div class="photos">
-        <img
-          src="./asset/image/endgame.jpg"
-          alt=""
-        />
+        <img src="./asset/image/endgame.jpg" alt="" />
       </div>
       <div class="photos">
-        <img
-          src="./asset/image/fikr eskemeqabr.jpg"
-          alt=""
-        />
+        <img src="./asset/image/fikr eskemeqabr.jpg" alt="" />
       </div>
       <div class="photos">
-        <img
-          src="./asset/image/final call.png"
-          alt=""
-        />
+        <img src="./asset/image/final call.png" alt="" />
       </div>
       <div class="photos">
-        <img
-          src="./asset/image/starboy.jpg"
-          alt=""
-        />
+        <img src="./asset/image/starboy.jpg" alt="" />
       </div>
       <div class="photos">
-        <img
-          src="./asset/image/tedy001.jpg"
-          alt=""
-        />
+        <img src="./asset/image/tedy001.jpg" alt="" />
       </div>
       <div class="photos">
-        <img
-          src="./asset/image/12 monkeys0001.jpg"
-          alt=""
-        />
+        <img src="./asset/image/12 monkeys0001.jpg" alt="" />
       </div>
     </div>
-  </body>
+</body>
+
 </html>
